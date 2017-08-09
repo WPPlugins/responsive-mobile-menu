@@ -1,0 +1,160 @@
+body {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: .25s ease-in-out
+}
+
+.rmm-responsive-mobile-menu-container,
+.rmm-responsive-mobile-menu-submenu {
+    position: fixed;
+    z-index: 9999999999;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    transition: .25s ease-in-out;
+    -webkit-box-shadow: 2px 0 15px rgba(0, 0, 0, .08);
+    -moz-box-shadow: 2px 0 15px rgba(0, 0, 0, .08);
+    box-shadow: 2px 0 15px rgba(0, 0, 0, .08)
+}
+
+.rmm-responsive-mobile-menu-container.left {
+    left: -250px
+}
+
+.rmm-responsive-mobile-menu-container.right {
+    right: -250px
+}
+
+.rmm-responsive-mobile-menu-container.left.active {
+    left: 0
+}
+
+.rmm-responsive-mobile-menu-container.right.active {
+    right: 0
+}
+
+.rmm-responsive-mobile-menu-submenu {
+    width: 245px;
+    transition: .25 linear
+}
+
+.rmm-responsive-mobile-menu-container.left .rmm-responsive-mobile-menu-submenu {
+    left: -255px
+}
+
+.rmm-responsive-mobile-menu-container.left .rmm-responsive-mobile-menu-submenu.active {
+    left: -5px
+}
+
+.rmm-responsive-mobile-menu-container.right .rmm-responsive-mobile-menu-submenu {
+    right: -255px
+}
+
+.rmm-responsive-mobile-menu-container.right .rmm-responsive-mobile-menu-submenu.active {
+    right: -5px
+}
+
+.rmm-responsive-mobile-menu-trigger {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 999999999;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border-radius: 3px;
+}
+
+.rmm-responsive-mobile-menu-trigger img {
+    width: 100%;
+    height: 100%
+}
+
+.rmm-responsive-mobile-menu-trigger.right {
+    right: 40px;
+    left: auto
+}
+
+.rmm-responsive-mobile-menu-main-title {
+    color: #FFF;
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 0
+}
+
+.admin-bar .rmm-responsive-mobile-menu-trigger {
+    top: 50px
+}
+
+.rmm-responsive-mobile-menu-main-title menuitem {
+    padding: 5px 20px
+}
+
+.rmm-responsive-mobile-menu-main-title span {
+    float: right
+}
+
+.rmm-responsive-mobile-menu-container menu menuitem menu,
+.rmm-responsive-mobile-menu-submenu menu menuitem menu {
+    display: none
+}
+
+.rmm-responsive-mobile-menu-container menuitem,
+.rmm-responsive-mobile-menu-container menuitem:hover {
+    cursor: pointer
+}
+
+menu,
+menuitem {
+    display: block;
+    margin: 0;
+    padding: 0
+}
+
+menu.rmm-responsive-mobile-menu-submenu {
+    border-right: 1px solid
+}
+
+menuitem {
+    display: block;
+    outline: 0;
+    overflow: hidden;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    border-bottom: 1px solid
+}
+
+.rmm-responsive-mobile-menu-close,
+.rmm-responsive-mobile-menu-submenu-close {
+    background: #212121 !important;
+    color: #fff !important;
+    padding: 10px 15px !important;
+    border-bottom: 1px solid #000;
+}
+
+.rmm-responsive-mobile-menu-close img {
+    margin: 0;
+}
+
+.rmm-responsive-mobile-menu-container {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.rmm-responsive-mobile-menu-container::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
+
+/* optional: show position indicator in red */
+
+.rmm-responsive-mobile-menu-container::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
